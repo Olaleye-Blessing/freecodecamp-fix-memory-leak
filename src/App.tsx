@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./App.css";
-import Timers from "./Timers";
+// import Timers from "./Timers";
+import ApiCall from "./ApiCall";
 // import EventListener from "./EventListener";
 
 function App() {
@@ -15,7 +16,8 @@ function App() {
 				{showComponent ? "Hide" : "show"} component
 			</button>
 			{/* {showComponent && <EventListener />} */}
-			{showComponent && <Timers />}
+			{/* {showComponent && <Timers />} */}
+			{showComponent && <ApiCall />}
 		</>
 	);
 }
