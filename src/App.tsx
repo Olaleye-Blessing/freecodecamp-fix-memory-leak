@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./App.css";
-import EventListener from "./EventListener";
+import Timers from "./Timers";
+// import EventListener from "./EventListener";
 
 function App() {
 	const [showComponent, setShowComponent] = useState(true);
@@ -13,7 +14,8 @@ function App() {
 			<button onClick={toggleComponent}>
 				{showComponent ? "Hide" : "show"} component
 			</button>
-			{showComponent && <EventListener />}
+			{/* {showComponent && <EventListener />} */}
+			{showComponent && <Timers />}
 		</>
 	);
 }
